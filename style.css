@@ -1,0 +1,374 @@
+:root {
+    --moviezyellow: #F5C518;
+    --moviezbackground: #362B05;
+    --impactgreen: #008374;
+    --impactblue: #0da0fd;
+    --impactorange: #f25a0c;
+    --impactgray: #99CDC7;
+    --impactdarkgray: #00796B;
+  }
+  
+  
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: var(--impactgreen);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* stylizacja nawigacji*/
+  
+  .nav-container {
+    position: sticky;
+    top: 0px;
+    background-color: var(--impactdarkgray);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-container li {
+    display: inline-block;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    margin-left: 100px;
+  }
+  
+  
+  #dot {
+    color: var(--impactorange);
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    color: var(--impactgray);
+    margin-right: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .nav-menu li {
+    align-items: center;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  .nav-menu li:hover {
+    cursor: pointer;
+    color: var(--impactorange);
+    transition: color 0.5s;
+  }
+  
+  .nav-menu  #news, #about, #home
+  {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-menu #news:hover, #about:hover, #home:hover {
+    cursor: pointer;
+    color: var(--impactorange);
+    transition: color 0.5s;
+  }
+  
+  
+  a, a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* stylizacja searchboxu */
+  
+  
+  .searchbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px
+      }
+      
+  
+      input[type=name] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      }
+  
+      #submit:hover {
+        cursor: pointer;
+        border-color: white;
+        box-shadow: 0px 0px 10px var(--impactgray);
+        transition: 1s;
+    
+    }
+  
+      
+      #submit {
+        margin-top: 10px;
+        margin-left: 10px;
+        border: 2px solid var(--impactgray);
+        border-radius: 50px;
+        height: 50px;
+        width: 150px;
+        color: white;
+        background-color: var(--impactgreen);
+        box-shadow: 0px 0px 10px gray;
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* stylizacja głównego kontenera */
+  
+      .main-container {
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+    }
+  
+    #welcome
+    {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: center;
+      margin: 0 80px 0 80px;
+      padding: 8px;
+      font-size: 2.5rem;
+      border: solid 1px black;
+      color: var(--impactgray);
+    }
+  
+    
+  
+  
+      #results {
+       width:100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       flex-wrap: wrap;
+  
+      }
+
+      #results div {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 20px;
+      }
+
+      #results div img {
+        margin-top: 10px;
+        width: 40%;
+        border-radius: 10px;
+      }
+  
+      .results {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       }
+     
+  
+  .movie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      padding: 2rem;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      border-radius: 50px;
+  }
+  
+  .movie:hover {
+    cursor: pointer;
+        border-color: white;
+        box-shadow: 0px 0px 10px var(--impactgray);
+        transition: 1s;
+  }
+  
+  .movie h3 {
+      color: var(--impactgray);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 12px;
+      text-align: center;
+  }
+  
+  .movie p {
+    color: var(--impactgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .movie img {
+      display: flex;
+      max-width: 300px;
+      border: solid 1px;
+      border-radius: 12px;
+  }
+  
+  .poster
+  {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* dla podstrony "ABOUT" */
+  
+  .about-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 20px;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-main-container p {
+    display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 0 80px 0 80px;
+      padding: 8px;
+      font-size: 2.5rem;
+      border: solid 1px black;
+      color: var(--impactgray);
+  }
+     
+    
+  
+  
+  
+  
+  
+  
+  
+  /* dla urządzeń mobilnych */
+    
+  
+  
+  @media screen and (max-width: 768px) {
+    .nav-container {
+      position: sticky;
+      top: 0px;
+      background-color: var(--impactdarkgray);
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    #search-form{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .movie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 5px;
+  }
+  
+  .movie h3 {
+      color: var(--impactgray);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 12px;
+      text-align: center;
+  }
+  
+  .movie p {
+    color: var(--impactgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .movie img {
+      display: flex;
+      max-width: 300px;
+      border: solid 1px;
+      border-radius: 12px;
+  }
+  
+  .poster
+  {
+    display: flex;
+    justify-content: center;
+  }
+  }
